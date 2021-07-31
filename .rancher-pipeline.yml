@@ -4,7 +4,7 @@ stages:
       - publishImageConfig:
           dockerfilePath: ./Dockerfile
           buildContext: .
-          tag: austin-portfolio:${CICD_EXECUTION_SEQUENCE}
+          tag: austin-portfolio:v1.0
         env:
           PLUGIN_MTU: "1230"
   - name: Deploy
