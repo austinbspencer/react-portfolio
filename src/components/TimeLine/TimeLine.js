@@ -65,6 +65,8 @@ const Timeline = () => {
 
   return (
     <Section id="about">
+      <SectionDivider />
+      <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
         The purpose of JavaScript Mastery is to help aspiring and established
@@ -138,7 +140,6 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };
