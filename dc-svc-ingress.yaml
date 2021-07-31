@@ -1,20 +1,20 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: portfolio
+  name: austin-portfolio
   namespace: api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: portfolio
+      app: austin-portfolio
   template:
     metadata:
       labels:
-        app: portfolio
+        app: austin-portfolio
     spec:
       containers:
-        - name: portfolio
+        - name: austin-portfolio
           image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
           imagePullPolicy: Always
           ports:
@@ -35,7 +35,7 @@ spec:
       protocol: TCP
       nodePort: 31000
   selector:
-    app: portfolio
+    app: austin-portfolio
 
 ---
 kind: Ingress
