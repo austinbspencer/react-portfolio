@@ -20,7 +20,7 @@ spec:
           image: ${CICD_IMAGE}:v1.0
           imagePullPolicy: Always
           ports:
-            - containerPort: 3000
+            - containerPort: 80
               protocol: TCP
           env:
             - name: CICD_EXECUTION_SEQUENCE
@@ -36,9 +36,9 @@ spec:
   type: ClusterIP
   ports:
     - name: portfolio-port
-      port: 3000
+      port: 80
       protocol: TCP
-      targetPort: 3000
+      targetPort: 80
   selector:
     app: austin-portfolio
 
@@ -51,6 +51,13 @@ metadata:
 spec:
   rules:
     - host: www.austinbspencer.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: portfolio-service
+              servicePort: portfolio-port
+    - host: austinbspencer.com
       http:
         paths:
           - path: /
