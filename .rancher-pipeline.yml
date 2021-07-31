@@ -1,0 +1,24 @@
+stages:
+  - name: Publish
+    steps:
+      - publishImageConfig:
+          dockerfilePath: ./Dockerfile
+          buildContext: .
+          tag: austin-portfolio:${CICD_EXECUTION_SEQUENCE}
+        env:
+          PLUGIN_MTU: "1230"
+  - name: Deploy
+    steps:
+      - applyYamlConfig:
+          path: ./dc-svc-ingress.yaml
+branch:
+  include:
+    - main
+notification:
+  recipients:
+    - recipient: "abspencer2097@gmail.com"
+      notifier: "guldentech-email"
+  # Select which statuses you want the notification to be sent
+  condition: ["Failed"]
+  # Ability to override the default message (Optional)
+  # message: "my-message"
