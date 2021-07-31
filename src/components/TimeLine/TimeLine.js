@@ -66,8 +66,7 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionDivider />
-      <br />
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle main>About Me</SectionTitle>
       <SectionText>
         The purpose of JavaScript Mastery is to help aspiring and established
         developers to take their development skills to the next level and build
