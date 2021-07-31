@@ -20,7 +20,8 @@ spec:
           image: ${CICD_IMAGE}:v1.0
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 3000
+              protocol: TCP
           env:
             - name: CICD_EXECUTION_SEQUENCE
               value: "${CICD_EXECUTION_SEQUENCE}"
@@ -32,13 +33,12 @@ metadata:
   name: portfolio-service
   namespace: api
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
     - name: portfolio-port
-      port: 80
-      targetPort: 80
+      port: 3000
       protocol: TCP
-      nodePort: 31000
+      targetPort: 3000
   selector:
     app: austin-portfolio
 
