@@ -1,5 +1,5 @@
 # pull the official base image
-FROM node:10.4.3
+FROM node:14.4.0-alpine
 # set working direction
 WORKDIR /app
 # add `/app/node_modules/.bin` to $PATH
