@@ -18,20 +18,26 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
-        <LinkColumn>
+        {/* <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:309-824-3163">309-824-3163</LinkItem>
-        </LinkColumn>
+        </LinkColumn> */}
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
           <LinkItem href="mailto:abspencer2097@gmail.com">
             abspencer2097@gmail.com
           </LinkItem>
         </LinkColumn>
+        <LinkColumn>
+          <LinkTitle>Discord</LinkTitle>
+          <LinkItem href="https://discordapp.com/users/647084271743401994/">
+            abspen1#1764
+          </LinkItem>
+        </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
+          <Slogan>Get in touch with me!</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/abspen1">

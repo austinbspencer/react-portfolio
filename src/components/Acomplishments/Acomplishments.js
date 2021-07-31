@@ -8,10 +8,10 @@ import {
 import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 
 const data = [
-  { number: 20, text: "Open Source Projects" },
-  { number: 1000, text: "Students" },
-  { number: 1900, text: "Github Followers" },
-  { number: 5000, text: "Github Stars" },
+  { number: 25, text: "Open Source Projects" },
+  { number: 4600, text: "Github Commits" },
+  { number: 3.3, text: "GPA" },
+  { number: 180, text: "College Credits 🙃" },
 ];
 
 const Acomplishments = () => (

@@ -13,9 +13,10 @@ const Hero = (props) => (
     <LeftSection>
       <SectionTitle main center>
         Hello World! <br />
+        – Austin
       </SectionTitle>
-      <SectionText>Welcome to Austin's portfolio!</SectionText>
-      <Button onClick={() => (window.location = "#about")}>Learn More</Button>
+      <SectionText>Welcome to my portfolio built with React!</SectionText>
+      {/* <Button onClick={() => (window.location = "#about")}>Learn More</Button> */}
     </LeftSection>
   </Section>
 );
