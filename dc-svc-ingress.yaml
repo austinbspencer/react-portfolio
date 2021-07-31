@@ -13,6 +13,8 @@ spec:
       labels:
         app: austin-portfolio
     spec:
+      imagePullSecrets:
+        - name: pipeline-docker-registry
       containers:
         - name: austin-portfolio
           image: ${CICD_IMAGE}:v1.0
