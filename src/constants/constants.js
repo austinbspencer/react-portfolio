@@ -44,6 +44,6 @@ export const projects = [
 export const TimeLineData = [
   { year: 2018, text: "Started my development journey" },
   { year: 2019, text: "Transferred to ASU to pursue CS degree" },
-  { year: 2020, text: "Began building personal projects" },
+  { year: 2020, text: "Solutions Center Intern at Salt River Project" },
   { year: 2021, text: "Data Engineering Intern at USAA" },
 ];
