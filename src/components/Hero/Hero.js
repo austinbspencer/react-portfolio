@@ -18,7 +18,13 @@ const Hero = (props) => (
       <SectionText>
         Welcome to my portfolio built with React and Next.js!
       </SectionText>
-      {/* <Button onClick={() => (window.location = "#about")}>Learn More</Button> */}
+      <Button
+        onClick={() =>
+          (window.location = "https://git.austinbspencer.com/resume")
+        }
+      >
+        Resume
+      </Button>
     </LeftSection>
   </Section>
 );
