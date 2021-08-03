@@ -41,6 +41,39 @@ export const projects = [
   },
 ];
 
+export const websites = [
+  {
+    title: "Environment Advisors",
+    description:
+      "Website built to display environment factors on stocks. Also has the ability to give all recent news on the stock and some other various data. Built with Vue.js and Vuetify.js and deployed within GitHub Pages.",
+    image: "/images/eav2.png",
+    tags: ["Vue.js", "HTML", "CSS", "JavaScript"],
+    // source: "https://twitter.com/InternTendie",
+    visit: "https://git.austinbspencer.com/eav2",
+    id: 1,
+  },
+  {
+    title: "Mason Spencer Lives On",
+    description:
+      "This website was built for the Mason Spencer Lives On non-profit. The purpose of the site is for exposure and knowledge on HLH/XLP2. Built with WordPress and deployed as a container within Kubernetes.",
+    image: "/images/mason.png",
+    tags: ["WordPress", "CSS", "JavaScript"],
+    // source: "https://captrack.laudecapital.com",
+    visit: "https://masonspencerliveson.com",
+    id: 0,
+  },
+  {
+    title: "Gretchen Louise Photography",
+    description:
+      "This webpage was built for Gretchen Louise Photography to display their work and attract new clients. Built with WordPress and deployed as a container within Kubernetes.",
+    image: "/images/gretch.png",
+    tags: ["WordPress", "CSS", "JavaScript"],
+    // source: "https://laudecapital.com",
+    visit: "https://gretchenlouisephotography.com",
+    id: 2,
+  },
+];
+
 export const TimeLineData = [
   { year: 2018, text: "Started my development journey" },
   { year: 2019, text: "Transferred to ASU to pursue CS degree" },

@@ -23,7 +23,7 @@ const Hero = (props) => (
           (window.location = "https://git.austinbspencer.com/resume")
         }
       >
-        Resume
+        RESUME
       </Button>
     </LeftSection>
   </Section>

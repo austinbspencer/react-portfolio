@@ -12,21 +12,21 @@ import {
   TitleContent,
   UtilityList,
   Img,
-} from "./ProjectsStyles";
+} from "../Projects/ProjectsStyles";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { projects } from "../../constants/constants";
+import { websites } from "../../constants/constants";
 
-const Projects = () => (
-  <Section id="projects">
+const Websites = () => (
+  <Section id="websites">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle main>Websites</SectionTitle>
     <GridContainer>
-      {projects.map(
+      {websites.map(
         ({ id, image, title, description, tags, source, visit }) => (
           <BlogCard key={id}>
             <Img src={image} />
@@ -44,8 +44,7 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={visit}>Code</ExternalLinks>
-              <ExternalLinks href={source}>Source</ExternalLinks>
+              <ExternalLinks href={visit}>Source</ExternalLinks>
             </UtilityList>
           </BlogCard>
         )
@@ -54,4 +53,4 @@ const Projects = () => (
   </Section>
 );
 
-export default Projects;
+export default Websites;
