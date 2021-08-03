@@ -16,7 +16,7 @@ export const projects = [
     image: "/images/python.jpeg",
     tags: ["Python", "Redis", "Cloud", "Docker"],
     source: "https://twitter.com/InternTendie",
-    visit: "https://github.com/abspen1/twitter-bot",
+    visit: "https://github.com/austinbspencer/twitter-bot",
     id: 1,
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     image: "/images/alpaca.png",
     tags: ["Python", "Redis", "API", "Docker"],
     source: "https://laudecapital.com",
-    visit: "https://github.com/abspen1/alpaca-python",
+    visit: "https://github.com/austinbspencer/alpaca-python",
     id: 2,
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     image: "/images/go.svg",
     tags: ["Go", "Redis", "Docker"],
     source: "https://guldentech.com/austinapi/",
-    visit: "https://github.com/abspen1/go-backend",
+    visit: "https://github.com/austinbspencer/go-backend",
     id: 3,
   },
 ];

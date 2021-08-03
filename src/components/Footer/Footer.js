@@ -31,7 +31,7 @@ const Footer = () => {
         <LinkColumn>
           <LinkTitle>Discord</LinkTitle>
           <LinkItem href="https://discordapp.com/users/647084271743401994/">
-            abspen1#1764
+            austinbspencer#1764
           </LinkItem>
         </LinkColumn>
       </LinkList>
@@ -40,7 +40,7 @@ const Footer = () => {
           <Slogan>Get in touch with me!</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/abspen1">
+          <SocialIcons href="https://github.com/austinbspencer">
             <AiFillGithub size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://www.linkedin.com/in/austin-spencer-b56a25177/">
