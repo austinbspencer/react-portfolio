@@ -47,19 +47,31 @@ const Footer = () => {
           <Slogan>Get in touch with me!</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/austinbspencer">
+          <SocialIcons href="https://github.com/austinbspencer" target="_blank">
             <FaGithubSquare size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/austin-spencer-b56a25177/">
+          <SocialIcons
+            href="https://www.linkedin.com/in/austin-spencer-b56a25177/"
+            target="_blank"
+          >
             <FaLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://discordapp.com/users/647084271743401994/">
+          <SocialIcons
+            href="https://discordapp.com/users/647084271743401994/"
+            target="_blank"
+          >
             <FaDiscord size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/austinspencer/">
+          <SocialIcons
+            href="https://www.instagram.com/austinspencer/"
+            target="_blank"
+          >
             <FaInstagramSquare size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.twitter.com/austinbspencer/">
+          <SocialIcons
+            href="https://www.twitter.com/austinbspencer/"
+            target="_blank"
+          >
             <FaTwitterSquare size="3rem" />
           </SocialIcons>
         </SocialContainer>

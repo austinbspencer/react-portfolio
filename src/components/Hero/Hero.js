@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLocationArrow } from "react-icons/fa";
 
 import {
   SecondaryBtn,
@@ -7,8 +6,7 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
-import NavDropDown from "../NavDropDown/NavDropDown";
+// import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
 
 const Hero = (props) => {
@@ -28,9 +26,9 @@ const Hero = (props) => {
         <SectionText>
           Welcome to my portfolio built with React and Next.js!
         </SectionText>
-        <Button onClick={() => (window.location = "/Austin_Resume.pdf")}>
+        <SecondaryBtn onClick={() => (window.location = "/Austin_Resume.pdf")}>
           RESUME
-        </Button>
+        </SecondaryBtn>
       </LeftSection>
     </Section>
   );
