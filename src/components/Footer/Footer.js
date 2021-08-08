@@ -1,5 +1,12 @@
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+// import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import {
+  FaDiscord,
+  FaGithubSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaTwitterSquare,
+} from "react-icons/fa";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -24,16 +31,16 @@ const Footer = () => {
         </LinkColumn> */}
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:me@austinbspencer.com">
-            me@austinbspencer.com
+          <LinkItem href="mailto:austin@austinbspencer.com">
+            austin@austinbspencer.com
           </LinkItem>
         </LinkColumn>
-        <LinkColumn>
+        {/* <LinkColumn>
           <LinkTitle>Discord</LinkTitle>
           <LinkItem href="https://discordapp.com/users/647084271743401994/">
             austinbspencer#1764
           </LinkItem>
-        </LinkColumn>
+        </LinkColumn> */}
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
@@ -41,13 +48,19 @@ const Footer = () => {
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/austinbspencer">
-            <AiFillGithub size="3rem" />
+            <FaGithubSquare size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://www.linkedin.com/in/austin-spencer-b56a25177/">
-            <AiFillLinkedin size="3rem" />
+            <FaLinkedin size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="https://discordapp.com/users/647084271743401994/">
+            <FaDiscord size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://www.instagram.com/austinspencer/">
-            <AiFillInstagram size="3rem" />
+            <FaInstagramSquare size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="https://www.twitter.com/austinbspencer/">
+            <FaTwitterSquare size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
