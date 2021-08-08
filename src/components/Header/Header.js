@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-// import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+
 import {
   FaDiscord,
   FaGithubSquare,
@@ -20,7 +20,6 @@ import {
   SocialIcons,
   Span,
 } from "./HeaderStyles";
-import NavDropDown from "../NavDropDown/NavDropDown";
 
 const Header = () => (
   <Container>
