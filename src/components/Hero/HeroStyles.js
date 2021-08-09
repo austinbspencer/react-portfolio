@@ -20,7 +20,7 @@ export const LeftSection = styled.div`
 
 export const DownArrow = styled.div`
   padding-top: 200px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #01bf71;
 
   @media ${(props) => props.theme.breakpoints.lg} {
     padding-top: 120px;
@@ -48,7 +48,7 @@ export const BouncyLink = styled.a`
     -webkit-animation: none;
     animation: none;
     cursor: pointer;
-    color: #01bf71;
+    color: rgba(255, 255, 255, 0.5);
   }
 
   @-webkit-keyframes bounce {

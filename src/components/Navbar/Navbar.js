@@ -14,7 +14,6 @@ import {
   NavMenu,
   Span,
 } from "./NavbarStyles";
-import { Button } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
