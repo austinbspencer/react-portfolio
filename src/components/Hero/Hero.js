@@ -7,9 +7,8 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 // import Button from "../../styles/GlobalComponents/Button";
-import { BouncyLink, DownArrow, HeroDivider, LeftSection } from "./HeroStyles";
+import { LeftSection } from "./HeroStyles";
 import {
-  FaAngleDoubleDown,
   FaDiscord,
   FaGithubSquare,
   FaInstagramSquare,
@@ -30,7 +29,7 @@ const Hero = (props) => {
 
   return (
     <>
-      <Section hero row nopadding>
+      <Section row nopadding>
         <LeftSection>
           <SectionTitle main center>
             Hello World! <br />
@@ -76,13 +75,6 @@ const Hero = (props) => {
               <FaTwitterSquare size="3rem" />
             </SocialIcons>
           </SocialContainer>
-          <DownArrow>
-            <Link href="#projects">
-              <BouncyLink>
-                <FaAngleDoubleDown size="4rem" />
-              </BouncyLink>
-            </Link>
-          </DownArrow>
         </LeftSection>
       </Section>
     </>
