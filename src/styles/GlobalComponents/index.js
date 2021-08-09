@@ -82,6 +82,7 @@ export const SectionText = styled.p`
 `;
 
 export const SectionDivider = styled.div`
+  margin-top: 80px; // Needed to keep below sticky nav
   width: 64px;
   height: 6px;
   border-radius: 10px;
