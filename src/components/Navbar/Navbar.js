@@ -1,5 +1,5 @@
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import React from "react";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import {
@@ -14,11 +14,26 @@ import {
   NavMenu,
   Span,
 } from "./NavbarStyles";
+import { Button } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <Link href="/">
             <NavLogo>
@@ -51,9 +66,13 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <Link href="mailto:austin@austinbspencer.com">
-              <NavBtnLink>Contact</NavBtnLink>
-            </Link>
+            <NavBtnLink
+              onClick={() =>
+                (window.location = "mailto:austin@austinbspencer.com")
+              }
+            >
+              Contact
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

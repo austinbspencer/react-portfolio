@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({ scrollNav }) =>
+    scrollNav ? "hsl(232.7,27.3%,23.7%)" : "transparent"};
+  transition: all 0.5s ease-in-out;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -117,7 +119,7 @@ export const NavBtnLink = styled.a`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  &.hover {
+  &:hover {
     transition: all 0.2 ease-in-out;
     background: #fff;
     color: #010606;

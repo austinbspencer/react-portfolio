@@ -7,7 +7,19 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 // import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+import { BouncyLink, DownArrow, HeroDivider, LeftSection } from "./HeroStyles";
+import {
+  FaAngleDoubleDown,
+  FaDiscord,
+  FaGithubSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaTwitterSquare,
+} from "react-icons/fa";
+
+import { SocialIcons } from "../Header/HeaderStyles";
+import { SocialContainer } from "../Footer/FooterStyles";
+import Link from "next/link";
 
 const Hero = (props) => {
   let dropDownActive = true;
@@ -18,7 +30,7 @@ const Hero = (props) => {
 
   return (
     <>
-      <Section row nopadding>
+      <Section hero row nopadding>
         <LeftSection>
           <SectionTitle main center>
             Hello World! <br />
@@ -32,6 +44,45 @@ const Hero = (props) => {
           >
             RESUME
           </SecondaryBtn>
+          <SocialContainer>
+            <SocialIcons
+              href="https://github.com/austinbspencer"
+              target="_blank"
+            >
+              <FaGithubSquare size="3rem" />
+            </SocialIcons>
+            <SocialIcons
+              href="https://www.linkedin.com/in/austin-spencer-b56a25177/"
+              target="_blank"
+            >
+              <FaLinkedin size="3rem" />
+            </SocialIcons>
+            <SocialIcons
+              href="https://discordapp.com/users/647084271743401994/"
+              target="_blank"
+            >
+              <FaDiscord size="3rem" />
+            </SocialIcons>
+            <SocialIcons
+              href="https://www.instagram.com/austinspencer/"
+              target="_blank"
+            >
+              <FaInstagramSquare size="3rem" />
+            </SocialIcons>
+            <SocialIcons
+              href="https://www.twitter.com/austinbspencer/"
+              target="_blank"
+            >
+              <FaTwitterSquare size="3rem" />
+            </SocialIcons>
+          </SocialContainer>
+          <DownArrow>
+            <Link href="#projects">
+              <BouncyLink>
+                <FaAngleDoubleDown size="4rem" />
+              </BouncyLink>
+            </Link>
+          </DownArrow>
         </LeftSection>
       </Section>
     </>
