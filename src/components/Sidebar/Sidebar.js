@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <Link href="#projects">
-            <SidebarLink>Project</SidebarLink>
+            <SidebarLink>Projects</SidebarLink>
           </Link>
           <Link href="#websites">
             <SidebarLink>Websites</SidebarLink>
@@ -32,7 +32,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarLink>Technologies</SidebarLink>
           </Link>
           <Link href="#about">
-            <SidebarLink>Project</SidebarLink>
+            <SidebarLink>About</SidebarLink>
           </Link>
         </SidebarMenu>
         <SidebarBtnWrap>
