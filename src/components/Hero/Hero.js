@@ -17,20 +17,24 @@ const Hero = (props) => {
   };
 
   return (
-    <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Hello World! <br />
-          – Austin
-        </SectionTitle>
-        <SectionText>
-          Welcome to my portfolio built with React and Next.js!
-        </SectionText>
-        <SecondaryBtn onClick={() => (window.location = "/Austin_Resume.pdf")}>
-          RESUME
-        </SecondaryBtn>
-      </LeftSection>
-    </Section>
+    <>
+      <Section row nopadding>
+        <LeftSection>
+          <SectionTitle main center>
+            Hello World! <br />
+            – Austin
+          </SectionTitle>
+          <SectionText>
+            Welcome to my portfolio built with React and Next.js!
+          </SectionText>
+          <SecondaryBtn
+            onClick={() => (window.location = "/Austin_Resume.pdf")}
+          >
+            RESUME
+          </SecondaryBtn>
+        </LeftSection>
+      </Section>
+    </>
   );
 };
 

@@ -6,7 +6,6 @@ import {
   FaGithubSquare,
   FaInstagramSquare,
   FaLinkedin,
-  FaLocationArrow,
   FaTwitterSquare,
 } from "react-icons/fa";
 import { DiCssdeck } from "react-icons/di";
