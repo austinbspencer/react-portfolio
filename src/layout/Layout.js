@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
 // import Header from '../components/Header/Header'
 import Navbar from "../components/Navbar/Navbar";
-import Sidebar from "../components/SideBar/Sidebar";
+import Sidebar from "../components/Sidebar/Sidebar";
 import { Container } from "./LayoutStyles";
 
 export const Layout = ({ children }) => {
