@@ -10,6 +10,7 @@ import { Section } from "../styles/GlobalComponents";
 import { ArrowContainer, BouncyLink, DownArrow } from "../layout/LayoutStyles";
 import Link from "next/link";
 import { FaAngleDoubleDown } from "react-icons/fa";
+import Skills from "../components/Skills/Skills";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
       <Projects />
       <Websites />
       <Technologies />
+      <Skills />
       <Timeline />
       <Acomplishments />
     </Layout>
