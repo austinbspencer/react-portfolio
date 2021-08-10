@@ -72,6 +72,16 @@ export const websites = [
     visit: "https://gretchenlouisephotography.com",
     id: 2,
   },
+  {
+    title: "4th Point",
+    description:
+      "This webpage was built for the rock band 4th Point. The purpose of this site is to help gain more attention to the band and make it easier to find when and where their upcoming shows are.",
+    image: "/images/4thpoint.png",
+    tags: ["WordPress", "CSS", "JavaScript", "PHP"],
+    // source: "https://laudecapital.com",
+    visit: "https://wordpress.4thpoint.com",
+    id: 2,
+  },
 ];
 
 export const TimeLineData = [

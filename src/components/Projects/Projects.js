@@ -12,6 +12,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  Div,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -35,14 +36,14 @@ const Projects = () => (
               <Hr />
             </TitleContent>
             <CardInfo>{description}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
+            <Div>
+              <TitleContent>Tech Stack</TitleContent>
               <TagList>
                 {tags.map((tag, i) => (
                   <Tag key={i}>{tag}</Tag>
                 ))}
               </TagList>
-            </div>
+            </Div>
             <UtilityList>
               <ExternalLinks href={visit}>Code</ExternalLinks>
               <ExternalLinks href={source}>Source</ExternalLinks>
