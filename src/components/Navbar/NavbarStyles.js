@@ -78,10 +78,11 @@ export const NavItem = styled.li`
 export const NavLinks = styled.a`
   color: rgba(255, 255, 255, 0.75);
   display: flex;
+  font-size: 2rem;
   align-items: center;
   text-decoration: none;
   line-height: 32px;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   height: 100%;
   cursor: pointer;
 
@@ -94,6 +95,10 @@ export const NavLinks = styled.a`
   &.active {
     border-bottom: 3px solid #fff;
     color: red;
+  }
+  @media screen and (max-width: 960px) {
+    font-size: 1.5rem;
+    padding: 0 1rem;
   }
 `;
 
