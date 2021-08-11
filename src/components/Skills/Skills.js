@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
-import SkillBar from "react-skillbars";
+// import SkillBar from "react-skillbars";
 
 const Skills = () => {
   const skills = [
@@ -24,7 +24,7 @@ const Skills = () => {
   return (
     <Section id="skills">
       <SectionTitle main>Languages</SectionTitle>
-      <SkillBar skills={skills} colors={colors} />
+      {/* <SkillBar skills={skills} colors={colors} /> */}
     </Section>
   );
 };
