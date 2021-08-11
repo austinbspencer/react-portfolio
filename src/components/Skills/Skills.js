@@ -1,30 +1,37 @@
 import React from "react";
 
-import { Section, SectionTitle } from "../../styles/GlobalComponents";
-// import SkillBar from "react-skillbars";
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { SkillBars } from "react-skills";
+import { LeftSection } from "../Hero/HeroStyles";
+import ProfileImage from "../ProfileImage/ProfileImage";
+import { Div } from "./SkillsStyles";
 
 const Skills = () => {
   const skills = [
-    { type: "PYTHON", level: 85 },
-    { type: "C++", level: 80 },
-    { type: "JAVASCRIPT", level: 70 },
-    { type: "JAVA", level: 65 },
-    { type: "HTML/CSS", level: 60 },
-    { type: "GO", level: 50 },
+    { name: "PYTHON", level: 85, color: "hsl(232.7,27.3%,23.7%)" },
+    { name: "C++", level: 80, color: "hsl(232.7,27.3%,23.7%)" },
+    { name: "JAVASCRIPT", level: 70, color: "hsl(232.7,27.3%,23.7%)" },
+    { name: "JAVA", level: 65, color: "hsl(232.7,27.3%,23.7%)" },
+    { name: "HTML/CSS", level: 60, color: "hsl(232.7,27.3%,23.7%)" },
+    { name: "GO", level: 50, color: "hsl(232.7,27.3%,23.7%)" },
   ];
 
-  const colors = {
-    bar: "hsl(232.7,27.3%,23.7%)",
-    title: {
-      text: "#fff",
-      background: "#01BF71",
-    },
-  };
-
   return (
-    <Section id="skills">
-      <SectionTitle main>Languages</SectionTitle>
-      {/* <SkillBar skills={skills} colors={colors} /> */}
+    <Section row nopadding id="skills">
+      <LeftSection>
+        <Div>
+          <ProfileImage />
+        </Div>
+        <SectionText>
+          My favorite programming languages that I ranked based on
+          comfortability, experience, and skill.
+        </SectionText>
+        <SkillBars skills={skills} />
+      </LeftSection>
     </Section>
   );
 };
