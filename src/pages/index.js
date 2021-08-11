@@ -11,8 +11,8 @@ import { ArrowContainer, BouncyLink, DownArrow } from "../layout/LayoutStyles";
 import Link from "next/link";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import Skills from "../components/Skills/Skills";
-import ProfileImage from "../components/ProfileImage/ProfileImage";
-import { Div } from "../components/ProfileImage/ProfileImageStyles";
+// import ProfileImage from "../components/ProfileImage/ProfileImage";
+// import { Div } from "../components/ProfileImage/ProfileImageStyles";
 
 const Home = () => {
   return (
@@ -36,12 +36,13 @@ const Home = () => {
       <Websites />
       <Technologies />
       <Timeline />
-      <Section grid>
+      {/* <Section grid>
         <Skills />
         <Div>
           <ProfileImage />
         </Div>
-      </Section>
+      </Section> */}
+      <Skills />
       <Acomplishments />
     </Layout>
   );

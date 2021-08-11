@@ -1,15 +1,11 @@
 import React from "react";
 
-import {
-  Section,
-  SectionText,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
+import { Section, SectionText } from "../../styles/GlobalComponents";
 import { SkillBars } from "react-skills";
-import { LeftSection } from "../Hero/HeroStyles";
-import ProfileImage from "../ProfileImage/ProfileImage";
-import { Div } from "./SkillsStyles";
-import { Div as Div2 } from "../ProfileImage/ProfileImageStyles";
+// import { LeftSection } from "../Hero/HeroStyles";
+// import ProfileImage from "../ProfileImage/ProfileImage";
+// import { Div } from "./SkillsStyles";
+// import { Div as Div2 } from "../ProfileImage/ProfileImageStyles";
 
 const Skills = () => {
   const skills = [
@@ -23,7 +19,7 @@ const Skills = () => {
 
   return (
     <>
-      <Div>
+      {/* <Div>
         <Section id="skills">
           <ProfileImage />
           <SectionText>
@@ -43,7 +39,14 @@ const Skills = () => {
             <SkillBars skills={skills} />
           </LeftSection>
         </Section>
-      </Div2>
+      </Div2> */}
+      <Section id="skills">
+        <SectionText>
+          My favorite programming languages that I ranked based on
+          comfortability, experience, and skill.
+        </SectionText>
+        <SkillBars skills={skills} />
+      </Section>
     </>
   );
 };
