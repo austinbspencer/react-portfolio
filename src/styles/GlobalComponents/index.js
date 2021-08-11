@@ -13,16 +13,20 @@ export const Section = styled.section`
   grid-template-columns: 1fr 1fr;
 
   @media screen and (max-width: 768px) {
-    padding: ${(props) => (props.nopadding ? "0" : "24px 48px 0")};
-    flex-direction: column;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
+    /* padding: ${(props) => (props.nopadding ? "0" : "24px 48px 0")};
+    flex-direction: column; */
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
 
     width: calc(100vw - 32px);
     flex-direction: column;
   }
+
+  /* @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  } */
 `;
 
 export const SectionTitle = styled.h2`

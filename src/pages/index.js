@@ -12,6 +12,7 @@ import Link from "next/link";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import Skills from "../components/Skills/Skills";
 import ProfileImage from "../components/ProfileImage/ProfileImage";
+import { Div } from "../components/ProfileImage/ProfileImageStyles";
 
 const Home = () => {
   return (
@@ -37,7 +38,9 @@ const Home = () => {
       <Timeline />
       <Section grid>
         <Skills />
-        <ProfileImage />
+        <Div>
+          <ProfileImage />
+        </Div>
       </Section>
       <Acomplishments />
     </Layout>
