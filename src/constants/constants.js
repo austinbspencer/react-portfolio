@@ -79,7 +79,7 @@ export const websites = [
     image: "/images/4thpoint.png",
     tags: ["WordPress", "CSS", "JavaScript", "PHP"],
     // source: "https://laudecapital.com",
-    visit: "https://wordpress.4thpoint.com",
+    visit: "https://4thpoint.com",
     id: 3,
   },
 ];
