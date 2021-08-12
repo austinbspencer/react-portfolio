@@ -4,4 +4,4 @@
 
 ## YouTube tutorial
 
-Built base from YouTube tutorial then added my own flare
+Built base from YouTube tutorial then added my own flares
