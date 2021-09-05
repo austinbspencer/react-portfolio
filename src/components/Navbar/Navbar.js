@@ -45,7 +45,7 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <Link href="#projects">
-                <NavLinks>Project</NavLinks>
+                <NavLinks>Projects</NavLinks>
               </Link>
             </NavItem>
             <NavItem>

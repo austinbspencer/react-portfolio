@@ -18,6 +18,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
+import ProfileImage from "../ProfileImage/ProfileImage";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -71,6 +72,9 @@ const Timeline = () => {
         Avid learner who is always looking for the next project and the newest
         technology to learn.
       </SectionText>
+      <ProfileImage></ProfileImage>
+      <br />
+      <br />
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (

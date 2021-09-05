@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-  //   display: ${({ showSkills }) => (showSkills ? "block" : "none")};
-  display: none;
-
+  display: block;
   @media screen and (max-width: 1150px) {
-    display: block;
+    display: none;
   }
 `;
