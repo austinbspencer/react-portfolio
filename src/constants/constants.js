@@ -43,13 +43,13 @@ export const projects = [
 
 export const websites = [
   {
-    title: "Environment Advisors",
+    title: "Spotify Webapp",
     description:
-      "Website built to display environment factors on stocks. Also has the ability to give all recent news on the stock and some other various data. Built with Vue.js and Vuetify.js and deployed within GitHub Pages.",
-    image: "/images/eav2.png",
-    tags: ["Vue.js", "HTML", "CSS", "JavaScript"],
+      "Webapp built to allow Spotify users to view stats and info for their personal Spotify profile. Has the ability to give recommendations and view Artist, Song, and Playlist statistics. Built with Vue.js and Vuetify.js and deployed within GitHub Pages.",
+    image: "/images/spotify.png",
+    tags: ["Vue.js", "API", "Vuex", "JavaScript"],
     // source: "https://twitter.com/InternTendie",
-    visit: "https://git.austinbspencer.com/eav2",
+    visit: "https://git.austinbspencer.com/#/spotify",
     id: 1,
   },
   {
