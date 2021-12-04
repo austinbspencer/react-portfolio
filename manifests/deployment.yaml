@@ -1,0 +1,27 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: austin-portfolio
+  namespace: portfolio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: austin-portfolio
+  template:
+    metadata:
+      labels:
+        app: austin-portfolio
+    spec:
+      imagePullSecrets:
+        - name: guldentech-harbor-registry
+      containers:
+        - name: austin-portfolio
+          image: harbor.guldentech.com/austin-spencer/react-portfolio:TAG
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+          env:
+            - name: version
+              value: "x.x.x"
