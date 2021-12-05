@@ -44,7 +44,9 @@ const Websites = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={visit}>Source</ExternalLinks>
+              <ExternalLinks href={visit} target="_blank">
+                Source
+              </ExternalLinks>
             </UtilityList>
           </BlogCard>
         )

@@ -51,7 +51,7 @@ const Hero = (props) => {
               <FaGithubSquare size="3rem" />
             </SocialIcons>
             <SocialIcons
-              href="https://www.linkedin.com/in/austin-spencer-b56a25177/"
+              href="https://www.linkedin.com/in/austinbspencer/"
               target="_blank"
             >
               <FaLinkedin size="3rem" />
