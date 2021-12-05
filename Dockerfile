@@ -4,7 +4,7 @@ RUN mkdir /app
 
 WORKDIR /app
 
-COPY client/. /app/.
+COPY . /app/.
 
 RUN npm install
 
