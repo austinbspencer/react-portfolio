@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: portfolio-service
-  namespace: portfolio
+  namespace: personal-website
 spec:
   type: ClusterIP
   ports:
@@ -18,7 +18,7 @@ kind: Ingress
 apiVersion: extensions/v1beta1
 metadata:
   name: portfolio-ingress
-  namespace: portfolio
+  namespace: personal-website
 spec:
   rules:
     - host: www.austinbspencer.com
