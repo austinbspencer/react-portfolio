@@ -11,27 +11,30 @@ import { ArrowContainer, BouncyLink, DownArrow } from "../layout/LayoutStyles";
 import Link from "next/link";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import Skills from "../components/Skills/Skills";
+import GrowContainer from "../components/Transitions/GrowContainer";
 // import ProfileImage from "../components/ProfileImage/ProfileImage";
 // import { Div } from "../components/ProfileImage/ProfileImageStyles";
 
 const Home = () => {
   return (
     <Layout>
-      <Section hero>
-        <Section grid>
-          <Hero />
-          <BgAnimation />
+      <GrowContainer timeout={1500}>
+        <Section hero>
+          <Section grid>
+            <Hero />
+            <BgAnimation />
+          </Section>
+          <ArrowContainer>
+            <DownArrow>
+              <Link href="#projects">
+                <BouncyLink>
+                  <FaAngleDoubleDown size="4rem" />
+                </BouncyLink>
+              </Link>
+            </DownArrow>
+          </ArrowContainer>
         </Section>
-        <ArrowContainer>
-          <DownArrow>
-            <Link href="#projects">
-              <BouncyLink>
-                <FaAngleDoubleDown size="4rem" />
-              </BouncyLink>
-            </Link>
-          </DownArrow>
-        </ArrowContainer>
-      </Section>
+      </GrowContainer>
       <Projects />
       <Websites />
       <Technologies />

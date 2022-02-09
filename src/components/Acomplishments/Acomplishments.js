@@ -1,6 +1,8 @@
 import React from "react";
 
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
+import FadeContainer from "../Transitions/FadeContainer";
+import GrowContainer from "../Transitions/GrowContainer";
 import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 
 const data = [
@@ -14,15 +16,19 @@ const Acomplishments = () => (
   <Section id="accomplishments">
     {/* <SectionDivider />
     <br /> */}
-    <SectionTitle>Accomplishments</SectionTitle>
-    <Boxes>
-      {data.map((card, index) => (
-        <Box key={index}>
-          <BoxNum>{card.number}+</BoxNum>
-          <BoxText>{card.text}</BoxText>
-        </Box>
-      ))}
-    </Boxes>
+    <FadeContainer timeout={2500}>
+      <SectionTitle>Accomplishments</SectionTitle>
+    </FadeContainer>
+    <GrowContainer timeout={2500} threshold={0.2}>
+      <Boxes>
+        {data.map((card, index) => (
+          <Box key={index}>
+            <BoxNum>{card.number}+</BoxNum>
+            <BoxText>{card.text}</BoxText>
+          </Box>
+        ))}
+      </Boxes>
+    </GrowContainer>
   </Section>
 );
 

@@ -19,6 +19,8 @@ import {
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
 import ProfileImage from "../ProfileImage/ProfileImage";
+import SlideContainer from "../Transitions/SlideContainer";
+import FadeContainer from "../Transitions/FadeContainer";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -67,12 +69,18 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionDivider />
-      <SectionTitle main>About Me</SectionTitle>
-      <SectionText>
-        Avid learner who is always looking for the next project and the newest
-        technology to learn.
-      </SectionText>
+      <FadeContainer timeout={2500}>
+        <SectionTitle main>About Me</SectionTitle>
+      </FadeContainer>
+      <SlideContainer timeout={2500}>
+        <SectionText>
+          Avid learner who is always looking for the next project and the newest
+          technology to learn.
+        </SectionText>
+      </SlideContainer>
+      {/* <FadeContainer threshold={0.5}> */}
       <ProfileImage></ProfileImage>
+      {/* </FadeContainer> */}
       <br />
       <br />
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>

@@ -2,6 +2,7 @@ import React from "react";
 
 import { Section, SectionText } from "../../styles/GlobalComponents";
 import { SkillBars } from "react-skills";
+import FadeContainer from "../Transitions/FadeContainer";
 // import { LeftSection } from "../Hero/HeroStyles";
 // import ProfileImage from "../ProfileImage/ProfileImage";
 // import { Div } from "./SkillsStyles";
@@ -40,13 +41,15 @@ const Skills = () => {
           </LeftSection>
         </Section>
       </Div2> */}
-      <Section id="skills">
-        <SectionText>
-          My favorite programming languages that I ranked based on
-          comfortability, experience, and skill.
-        </SectionText>
-        <SkillBars skills={skills} />
-      </Section>
+      <FadeContainer timeout={2500} threshold={0.5}>
+        <Section id="skills">
+          <SectionText>
+            My favorite programming languages that I ranked based on
+            comfortability, experience, and skill.
+          </SectionText>
+          <SkillBars skills={skills} />
+        </Section>
+      </FadeContainer>
     </>
   );
 };
