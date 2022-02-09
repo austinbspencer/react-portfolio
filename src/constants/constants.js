@@ -1,10 +1,10 @@
 export const projects = [
   {
-    title: "CapTrack",
+    title: "CapTrack V2",
     description:
-      "Using Vue.js, JavaScript, & MongoDB to build a Full Stack Meteor Application from scratch. The App is called CapTrack and it is a web application built to help stock and option traders track their trades. The intention of the app is to help traders improve and make better trades by giving insightful information on their trades.",
+      "Using Next.js, Django & Postgresql to build a full stack web application from scratch. The App is called CapTrack and it is V2 of a web application built to help stock and option traders track their trades. The intention of the app is to help traders improve and make better trades by giving insightful information on their trades.",
     image: "/images/captrack.png",
-    tags: ["Mongo", "Vue.js", "JavaScript"],
+    tags: ["Next.js", "Django", "Python", "REST API"],
     source: "https://captrack.laudecapital.com",
     visit: "https://github.com/laude-capital",
     id: 0,
@@ -43,6 +43,16 @@ export const projects = [
 
 export const websites = [
   {
+    title: "Gretchen Louise Photography",
+    description:
+      "This webpage was built for Gretchen Louise Photography to display their work and attract new clients. Full-stack web application built with Next.js and DJango and deployed as a container within Kubernetes.",
+    image: "/images/gretch.png",
+    tags: ["Next.js", "Django", "API", "Postgresql"],
+    // source: "https://laudecapital.com",
+    visit: "https://gretchenlouisephotography.com",
+    id: 2,
+  },
+  {
     title: "Spotify Webapp",
     description:
       "Webapp built to allow Spotify users to view stats and info for their personal Spotify profile. Has the ability to give recommendations and view Artist, Song, and Playlist statistics. Built with Vue.js and Vuetify.js and deployed within GitHub Pages.",
@@ -62,16 +72,7 @@ export const websites = [
     visit: "https://masonspencerliveson.com",
     id: 0,
   },
-  {
-    title: "Gretchen Louise Photography",
-    description:
-      "This webpage was built for Gretchen Louise Photography to display their work and attract new clients. Built with WordPress and deployed as a container within Kubernetes.",
-    image: "/images/gretch.png",
-    tags: ["WordPress", "CSS", "JavaScript"],
-    // source: "https://laudecapital.com",
-    visit: "https://gretchenlouisephotography.com",
-    id: 2,
-  },
+
   {
     title: "4th Point",
     description:
