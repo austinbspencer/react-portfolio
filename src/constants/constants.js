@@ -53,6 +53,16 @@ export const websites = [
     id: 2,
   },
   {
+    title: "Battle of the States",
+    description:
+      "This is a full-stack web application I built for the Battle of the States. This website offers a fantasy sports league where you can compete for your state. Built with Next.js, Go, Postgresql, and Redis. Deployed with Docker and Kubernetes.",
+    image: "/images/4thpoint.png",
+    tags: ["Next.js", "Golang", "Redis", "Postgresql"],
+    // source: "https://laudecapital.com",
+    visit: "https://4thpoint.com",
+    id: 3,
+  },
+  {
     title: "Spotify Webapp",
     description:
       "Webapp built to allow Spotify users to view stats and info for their personal Spotify profile. Has the ability to give recommendations and view Artist, Song, and Playlist statistics. Built with Vue.js and Vuetify.js and deployed within GitHub Pages.",
@@ -71,17 +81,6 @@ export const websites = [
     // source: "https://captrack.laudecapital.com",
     visit: "https://masonspencerliveson.com",
     id: 0,
-  },
-
-  {
-    title: "4th Point",
-    description:
-      "This webpage was built for the rock band 4th Point. The purpose of this site is to help gain more attention to the band and make it easier to find when and where their upcoming shows are.",
-    image: "/images/4thpoint.png",
-    tags: ["WordPress", "CSS", "JavaScript", "PHP"],
-    // source: "https://laudecapital.com",
-    visit: "https://4thpoint.com",
-    id: 3,
   },
 ];
 

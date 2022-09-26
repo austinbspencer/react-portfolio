@@ -26,13 +26,13 @@ import FadeContainer from "../Transitions/FadeContainer";
 const Projects = () => (
   <Section id="projects">
     <SectionDivider />
-    <FadeContainer timeout={2500}>
+    <FadeContainer timeout={1500}>
       <SectionTitle main>Projects</SectionTitle>
     </FadeContainer>
     <GridContainer>
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
-          <SlideContainer key={id} timeout={2000} threshold={0.5}>
+          <SlideContainer key={id} timeout={1500} threshold={0.5}>
             <BlogCard key={id}>
               <Img src={image} />
               <TitleContent>
@@ -49,10 +49,10 @@ const Projects = () => (
                 </TagList>
               </Div>
               <UtilityList>
-                <ExternalLinks href={visit} target="_blank">
+                <ExternalLinks href={visit} target="_blank" rel="nofollow">
                   Code
                 </ExternalLinks>
-                <ExternalLinks href={source} target="_blank">
+                <ExternalLinks href={source} target="_blank" rel="nofollow">
                   Source
                 </ExternalLinks>
               </UtilityList>
