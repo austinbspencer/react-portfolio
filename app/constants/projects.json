@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Gretchen Louise Photography",
+    "image": "/assets/glp-logo-black.png",
+    "description": "This webpage was built for Gretchen Louise Photography to display their work and attract new clients. There is also an accompanying admin site where Gretchen can upload new blogs, update current blogs, view site stats, and view submitted forms.",
+    "stack": [
+      "Next.js",
+      "Golang",
+      "Postgresql",
+      "OAuth 2.0",
+      "Docker",
+      "Kubernetes"
+    ],
+    "links": [
+      {
+        "href": "https://gretchenlouisephotography.com",
+        "icon": "linkify"
+      }
+    ]
+  },
+  {
+    "title": "Socket DHT",
+    "image": "",
+    "description": "The purpose of this project is to implement your own application program in which processes communicate using sockets to maintain a distributed hash table (DHT) dynamically, and answer queries using it.",
+    "stack": ["Python", "Algorithms", "Threading"],
+    "links": [
+      {
+        "href": "https://github.com/asu-cse-source-code/socket-dht",
+        "icon": "code branch"
+      },
+      {
+        "href": "https://youtu.be/TQGvZwVt50g",
+        "icon": "youtube"
+      }
+    ]
+  },
+  {
+    "title": "Encoder & Decoder",
+    "image": "",
+    "description": "In this project I implemented a variable-length encoding and decoding scheme, and ran experiments to evaluate the effectiveness of the scheme, and the efficiency of my algorithms. This is a program that will take std::in input and output to std::out. However both can be redirected from/to text files.",
+    "stack": ["C++", "Algorithms"],
+    "links": [
+      {
+        "href": "https://github.com/austinbspencer/cse-310-encode-decode",
+        "icon": "code branch"
+      }
+    ]
+  },
+  {
+    "title": "Mason Spencer Lives On",
+    "image": "/assets/mason.png",
+    "description": "This website was built for the Mason Spencer Lives On non-profit. The purpose of the site is for exposure and knowledge on HLH/XLP2. Connected with the Facebook account and allows posting blogs that automatically post as Facebook posts.",
+    "stack": ["Wordpress", "Helm", "Bitnami", "Docker", "Kubernetes"],
+    "links": [
+      {
+        "href": "https://masonspencerliveson.com",
+        "icon": "linkify"
+      },
+      {
+        "href": "https://www.facebook.com/623432097701465",
+        "icon": "facebook"
+      },
+      {
+        "href": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5XN3TTB89SHXC",
+        "icon": "paypal"
+      }
+    ]
+  },
+  {
+    "title": "Spotify Webapp",
+    "image": "/assets/spotify.png",
+    "description": "Webapp built to allow Spotify users to view stats and info for their personal Spotify profile. Has the ability to give recommendations and view Artist, Song, and Playlist statistics. Deployed with GitHub Pages.",
+    "stack": ["Vue.js", "Golang", "Spotify API", "OAuth 2.0", "Vuex"],
+    "links": [
+      {
+        "href": "https://git.austinbspencer.com/#/spotify",
+        "icon": "linkify"
+      },
+      {
+        "href": "https://github.com/austinbspencer/austinbspencer.github.io",
+        "icon": "code branch"
+      }
+    ]
+  },
+  {
+    "title": "Class Attendance GUI",
+    "image": "",
+    "description": "This is a GUI that will allow several functions. The main purpose of this program is to allow teachers to upload their rosters and then easily keep track of the attendance of each student.",
+    "stack": ["Java", "GUI"],
+    "links": [
+      {
+        "href": "https://youtu.be/1HypZ_K_Tik",
+        "icon": "youtube"
+      }
+    ]
+  },
+  {
+    "title": "Pac-Man",
+    "image": "",
+    "description": "Pac-Man like game built with Python PyGame. Using Discrete Math principles to help build out the game.",
+    "stack": ["Python", "Video Games"],
+    "links": [
+      {
+        "href": "https://github.com/asu-cse-source-code/mat-243-pacman-pygame",
+        "icon": "linkify"
+      },
+      {
+        "href": "https://youtu.be/yhVceO8JAsM",
+        "icon": "youtube"
+      }
+    ]
+  },
+  {
+    "title": "Personal Portfolio V3?",
+    "image": "",
+    "description": "Personal Website to display my portfolio. Iteration 3 or so...",
+    "stack": ["Vue.js", "Vuetify"],
+    "links": [
+      {
+        "href": "https://github.com/austinbspencer/V3",
+        "icon": "code branch"
+      }
+    ]
+  },
+  {
+    "title": "Discord Bot",
+    "image": "",
+    "description": "Interacting with discord.js to create a personal Discord Bot with many features.",
+    "stack": ["Javascript", "Discord.js"],
+    "links": [
+      {
+        "href": "https://github.com/austinbspencer/discord-bot",
+        "icon": "code branch"
+      }
+    ]
+  }
+]

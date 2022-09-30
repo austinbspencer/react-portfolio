@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Captrack",
+    "image": "/assets/captrack.png",
+    "description": "Full stack web application built from scratch. The App is called CapTrack and it is V2 of a web application built to help stock and option traders track their trades. The intention of the app is to help traders improve and make better trades by giving insightful information on their trades. I also built this into a mobile application that is available on Expo for both Android and IOS.",
+    "stack": [
+      "Next.js",
+      "Postgresql",
+      "Django",
+      "Expo",
+      "Docker",
+      "Kubernetes"
+    ],
+    "links": [
+      {
+        "href": "https://captrack.laudecapital.com",
+        "icon": "linkify"
+      },
+      {
+        "href": "exp://exp.host/@laustindasauce/captrack?release-channel=default",
+        "icon": "mobile alternate"
+      }
+    ]
+  },
+  {
+    "title": "Algorithmic Trading",
+    "image": "/assets/alpaca.png",
+    "description": "Algorithms built with Python for live stock trading. Uses Alpaca Trade API for live trading and stock information. Incorporates Redis for persisting data and is ran as a Docker image in the Cloud.",
+    "stack": ["Python", "REST API", "Redis", "Docker", "Kubernetes"],
+    "links": []
+  },
+  {
+    "title": "Battle of the States",
+    "image": "/assets/bots.jpeg",
+    "description": "The BOTS team recognizes that the fantasy sports community is a growing community filled with individuals who crave new and exciting ways to engage in competition with sports fans across the nation. As diehard fantasy football players who take part in multiple leagues each year, we set out to create a league where winning would mean even a little bit more than it usually does.",
+    "stack": [
+      "Golang",
+      "Next.js",
+      "Postgresql",
+      "Redis",
+      "Email API",
+      "Docker",
+      "Kubernetes"
+    ],
+    "links": [
+      {
+        "href": "https://botsfantasysports.com",
+        "icon": "linkify"
+      }
+    ]
+  },
+  {
+    "title": "Twitter Bots",
+    "image": "/assets/twitter.jpeg",
+    "description": "Increasing engagement for social platforms through the integration of automated Twitter actions and accounts. I built several automated Twitter accounts that perform various actions and are running concurrently within the same Docker container. Using these accounts the social platform was able to amass 5500+ followers on Twitter and increase youtube following 10 fold.",
+    "stack": [
+      "Python",
+      "Threading",
+      "Redis",
+      "Twitter API",
+      "YouTube API",
+      "Docker",
+      "Kubernetes"
+    ],
+    "links": [
+      {
+        "href": "https://github.com/austinbspencer.com/twitter-bot",
+        "icon": "code branch"
+      },
+      {
+        "href": "https://www.youtube.com/c/PreGameSports",
+        "icon": "youtube"
+      },
+      {
+        "href": "https://twitter.com/PGSportsChicago",
+        "icon": "twitter"
+      }
+    ]
+  }
+]
