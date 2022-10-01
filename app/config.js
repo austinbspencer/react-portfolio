@@ -1,4 +1,5 @@
 const config = {
+  baseURL: "https://austinbspencer.com",
   homePath: "/",
   email: "austin@austinbspencer.com",
   link: {
