@@ -6,20 +6,11 @@ import Background from "./content/background/Background";
 import ExperienceHandler from "./content/experience/ExperienceHandler";
 import Skills from "./content/skills/Skills";
 import Projects from "./content/projects/Projects";
-import { useRouter } from "next/router";
+import Resume from "./content/resume/Resume";
 
 const StickyContent = () => {
-  const [activeItem, setActiveItem] = React.useState("background");
-  const router = useRouter();
-
-  const handleItemClick = (e, { name }) => {
-    if (activeItem !== name) {
-      setActiveItem(name);
-      router.push("#" + name);
-    }
-  };
-
   const contextRef = createRef();
+
   return (
     <div ref={contextRef} style={{ minHeight: "100vh" }}>
       <Grid>
@@ -33,6 +24,7 @@ const StickyContent = () => {
                 <Anchor.Link href="#top-projects" title="Featured" />
                 <Anchor.Link href="#other-projects" title="Notable" />
               </Anchor.Link>
+              <Anchor.Link href="#resume" title="Resume" />
             </Anchor>
           </Sticky>
         </Grid.Column>
@@ -45,6 +37,8 @@ const StickyContent = () => {
           <ExperienceHandler />
           <div style={{ marginBottom: "15vh" }} />
           <Projects />
+          <div style={{ marginBottom: "15vh" }} />
+          <Resume />
           <div style={{ marginBottom: "15vh" }} />
         </Grid.Column>
       </Grid>
