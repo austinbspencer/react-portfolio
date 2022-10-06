@@ -1,12 +1,18 @@
 import React from "react";
+import { Container, Embed, Header } from "semantic-ui-react";
 
 const unsubscribe = () => {
   return (
-    <div
-      class="ui embed"
-      data-url="https://www.youtube.com/embed/O6Xo21L0ybE"
-      data-placeholder="/images/bear-waving.jpg"
-    ></div>
+    <Container>
+      <Header as="h3" style={{ marginTop: "3em" }}>
+        Click to unsubscribe...
+      </Header>
+      <Embed
+        id="dQw4w9WgXcQ"
+        placeholder="https://i.imgur.com/1nCZI1Z.gif"
+        source="youtube"
+      />
+    </Container>
   );
 };
 
