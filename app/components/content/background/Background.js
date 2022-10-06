@@ -7,7 +7,7 @@ const Background = () => {
       <Header as="h1" textAlign="center" style={{ marginBottom: "1em" }}>
         Background
       </Header>
-      <Container text>
+      <Container>
         <p>
           I am currently a Data Engineer at USAA performing ELT with modern
           tools and programming. I work alongside some amazing people and also

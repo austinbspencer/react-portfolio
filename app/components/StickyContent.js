@@ -14,7 +14,7 @@ const StickyContent = () => {
   return (
     <div ref={contextRef} style={{ minHeight: "100vh" }}>
       <Grid>
-        <Grid.Column width={3}>
+        <Grid.Column className="tablet computer only" width={3}>
           <Sticky context={contextRef} offset={50}>
             <Anchor offsetTop={50}>
               <Anchor.Link href="#background" title="Background" />
@@ -29,7 +29,10 @@ const StickyContent = () => {
           </Sticky>
         </Grid.Column>
 
-        <Grid.Column stretched width={13}>
+        <Grid.Column
+          stretched
+          className="sixteen wide mobile thirteen wide tablet thirteen wide computer column"
+        >
           <Background />
           <div style={{ marginBottom: "15vh" }} />
           <Skills />
@@ -41,6 +44,19 @@ const StickyContent = () => {
           <Resume />
           <div style={{ marginBottom: "15vh" }} />
         </Grid.Column>
+
+        {/* <Grid.Column stretched className="mobile only" width={16}>
+          <Background />
+          <div style={{ marginBottom: "15vh" }} />
+          <Skills />
+          <div style={{ marginBottom: "15vh" }} />
+          <ExperienceHandler />
+          <div style={{ marginBottom: "15vh" }} />
+          <Projects />
+          <div style={{ marginBottom: "15vh" }} />
+          <Resume />
+          <div style={{ marginBottom: "15vh" }} />
+        </Grid.Column> */}
       </Grid>
     </div>
   );
